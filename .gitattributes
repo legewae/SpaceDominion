@@ -1,0 +1,8 @@
+# Все текстовые файлы — LF, чтобы локальная проверка dotnet format совпадала с CI.
+* text=auto eol=lf
+
+# Решение Visual Studio предпочитает CRLF.
+*.sln text eol=crlf
+
+# Бинарные зависимости не трогаем.
+*.dll binary
